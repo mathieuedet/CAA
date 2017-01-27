@@ -1,0 +1,17 @@
+applications:
+- path: .
+  memory: 1024M
+  instances: 1
+  domain: mybluemix.net
+  name: CAA
+  host: caa-soyhuce
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - CAA Notifications Push Services
+  - Mobile Client Access-iya67ogy
+  - CAA Weather Data Service
+  - API Connect-i3
+  - Cloudant NoSQL DB-dj
+  env:
+    NODE_RED_STORAGE_NAME: Cloudant NoSQL DB-dj
